@@ -1,0 +1,28 @@
+name:                fay-underscore
+version:             0.1.0.0
+synopsis:            fay bindings to underscore js
+description:         fay bindings to underscore js 
+homepage:            http://ioctl.it
+license:             GPL-3
+license-file:        LICENSE
+author:              karsten gebbert
+maintainer:          k@ioctl.it
+copyright:           karsten gebbert
+category:            Web, Fay
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+data-files:          src/Fay/Underscore.hs
+  
+source-repository head
+  type:              git
+  location:          https://github.com/krgn/fay-underscore.git
+          
+library
+  exposed:           False
+  hs-source-dirs:    src/
+  exposed-modules:   Fay.Underscore
+  ghc-options:       -Wall
+  build-depends:     fay >= 0.19 && < 0.21
+                   , fay-base == 0.19.*
+                   , fay-text 
